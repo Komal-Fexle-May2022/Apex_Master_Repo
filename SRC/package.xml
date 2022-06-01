@@ -8,6 +8,22 @@
         <members>DreamWorld_Object__c</members>
         <name>CustomTab</name>
     </types>
+	<types>
+		<members>HelloWorldClass</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Hello_World_Object__c.HelloWorld__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Hello_World_Object__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Hello_World_Object__c</members>
+		<name>CustomTab</name>
+	</types>
     <types>
         <members>DreamWorldClass</members>
         <name>ApexClass</name>
