@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>StudentController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Contact.Mobile_Number__c</members>
+        <members>Contact.Year_of_Class__c</members>
+        <members>Employee__c.Mentor__c</members>
+        <members>Employee__c.Trainer__c</members>
+        <members>Fees_Submitted__c.Deposits__c</members>
+        <members>Lead.Account__c</members>
+        <members>Pan_Card__c.Address__c</members>
+        <members>Pan_Card__c.Pan_Card_Number__c</members>
+        <members>Student_Subject__c.Student__c</members>
+        <members>Student_Subject__c.Subject__c</members>
+        <members>Student__c.Account_Number__c</members>
+        <members>Student__c.Address__c</members>
+        <members>Student__c.Bank_Name__c</members>
+        <members>Student__c.Bank_Phone_Number__c</members>
+        <members>Student__c.Branch__c</members>
+        <members>Student__c.City__c</members>
+        <members>Student__c.Class__c</members>
+        <members>Student__c.College_Joining__c</members>
+        <members>Student__c.Current_Year__c</members>
+        <members>Student__c.Donation_Amount__c</members>
+        <members>Student__c.Email_Password__c</members>
+        <members>Student__c.Exam_Fees_Submitted__c</members>
+        <members>Student__c.Father_Mobile_Number__c</members>
+        <members>Student__c.Father_Name__c</members>
+        <members>Student__c.GitHub_ID__c</members>
+        <members>Student__c.Home_Phone__c</members>
+        <members>Student__c.IFSC_code__c</members>
+        <members>Student__c.Is_Donation__c</members>
+        <members>Student__c.Linkedin_ID__c</members>
+        <members>Student__c.Mobile_Number__c</members>
+        <members>Student__c.No_Back__c</members>
+        <members>Student__c.Pending_Exam_Fees__c</members>
+        <members>Student__c.Pending_Fees_Amount__c</members>
+        <members>Student__c.Pending_Overall_Amount__c</members>
+        <members>Student__c.Place__c</members>
+        <members>Student__c.Roll_Number__c</members>
+        <members>Student__c.Sem_1st_Back__c</members>
+        <members>Student__c.Sem_1st_Percentage__c</members>
+        <members>Student__c.Sem_2nd_Back__c</members>
+        <members>Student__c.Sem_2nd_Percentage__c</members>
+        <members>Student__c.Sem_3rd_Back__c</members>
+        <members>Student__c.Sem_3rd_Percentage__c</members>
+        <members>Student__c.Sem_4th_Back__c</members>
+        <members>Student__c.Sem_4th_Percentage__c</members>
+        <members>Student__c.State__c</members>
+        <members>Student__c.Stream__c</members>
+        <members>Student__c.Student_College_Url__c</members>
+        <members>Student__c.Student_Email__c</members>
+        <members>Student__c.Student_Hobbies__c</members>
+        <members>Student__c.Student_Qualification__c</members>
+        <members>Student__c.Subjects_Sem_1st_Back__c</members>
+        <members>Student__c.Subjects_Sem_2nd_Back__c</members>
+        <members>Student__c.Subjects_Sem_3rd_Back__c</members>
+        <members>Student__c.Subjects_Semt_4th_Back__c</members>
+        <members>Student__c.Total_Fees__c</members>
+        <members>Student__c.Total_Percentage__c</members>
+        <members>Student__c.Total_Students__c</members>
+        <members>Teacher__c.College_Teacher__c</members>
+        <members>Teacher__c.Mobile_Number__c</members>
+        <members>Teacher__c.Salary__c</members>
+        <members>Teacher__c.Teacher_ID__c</members>
+        <members>Year_of_Class__c.Branch_Name__c</members>
+        <members>Year_of_Class__c.Student__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Branch__c</members>
+        <members>College__c</members>
+        <members>Employee__c</members>
+        <members>Fees_Submitted__c</members>
+        <members>Pan_Card__c</members>
+        <members>Student_Subject__c</members>
+        <members>Student__c</members>
+        <members>Subject__c</members>
+        <members>Teacher__c</members>
+        <members>Year_of_Class__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Employee__c</members>
+        <members>Pan_Card__c</members>
+        <members>Student_Subject__c</members>
+        <members>Student__c</members>
+        <members>Subject__c</members>
+        <members>Teacher__c</members>
+        <members>Year_of_Class__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Branch__c-Branch Layout</members>
+        <members>College__c-College Layout</members>
+        <members>Employee__c-Employee Layout</members>
+        <members>Fees_Submitted__c-Deposit Layout</members>
+        <members>Pan_Card__c-Pan Card Layout</members>
+        <members>Student_Subject__c-StudentSubject Layout</members>
+        <members>Student__c-Registrar Layout</members>
+        <members>Student__c-Student Layout</members>
+        <members>Student__c-Teacher Layout</members>
+        <members>Subject__c-Subject Layout</members>
+        <members>Teacher__c-Teacher Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Student__c.Registrar</members>
+        <members>Student__c.Teacher</members>
+        <name>RecordType</name>
+    </types>
+    <version>54.0</version>
+</Package>
