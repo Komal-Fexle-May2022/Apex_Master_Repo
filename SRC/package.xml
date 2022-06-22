@@ -29,11 +29,6 @@
         <name>ApexClass</name>
     </types>
 	<types>
-        <members>StudentController</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>Fees_Submitted__c.Deposits__c</members>
         <members>Student__c.Account_Number__c</members>
         <members>Student__c.Address__c</members>
         <members>Student__c.Bank_Name__c</members>
@@ -85,19 +80,6 @@
     </types>
     <types>
         <members>Branch__c</members>
-        <members>Deposit__c</members>
-        <members>Fees_Submitted__c</members>
-        <members>Student__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Student__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>Student__c-Registrar Layout</members>
-        <members>Student__c-Student Layout</members>
-        <members>Student__c-Teacher Layout</members>
         <name>Layout</name>
     </types>
     <types>
