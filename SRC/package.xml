@@ -87,5 +87,23 @@
         <members>Student__c.Teacher</members>
         <name>RecordType</name>
     </types>
+    <types>
+        <members>HelloWorldTestClass</members>
+        <members>MyHelloWorld</members>
+        <members>StarPatternController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Book__c.Price__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Book__c</members>
+        <name>CustomObject</name>
+    </types>
     <version>54.0</version>
 </Package>
