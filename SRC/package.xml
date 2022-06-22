@@ -29,16 +29,6 @@
         <name>ApexClass</name>
     </types>
 	<types>
-        <members>Contact.Mobile_Number__c</members>
-        <members>Contact.Year_of_Class__c</members>
-        <members>Employee__c.Mentor__c</members>
-        <members>Employee__c.Trainer__c</members>
-        <members>Fees_Submitted__c.Deposits__c</members>
-        <members>Lead.Account__c</members>
-        <members>Pan_Card__c.Address__c</members>
-        <members>Pan_Card__c.Pan_Card_Number__c</members>
-        <members>Student_Subject__c.Student__c</members>
-        <members>Student_Subject__c.Subject__c</members>
         <members>Student__c.Account_Number__c</members>
         <members>Student__c.Address__c</members>
         <members>Student__c.Bank_Name__c</members>
@@ -86,49 +76,10 @@
         <members>Student__c.Total_Fees__c</members>
         <members>Student__c.Total_Percentage__c</members>
         <members>Student__c.Total_Students__c</members>
-        <members>Teacher__c.College_Teacher__c</members>
-        <members>Teacher__c.Mobile_Number__c</members>
-        <members>Teacher__c.Salary__c</members>
-        <members>Teacher__c.Teacher_ID__c</members>
-        <members>Year_of_Class__c.Branch_Name__c</members>
-        <members>Year_of_Class__c.Student__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Branch__c</members>
-        <members>College__c</members>
-        <members>Employee__c</members>
-        <members>Fees_Submitted__c</members>
-        <members>Pan_Card__c</members>
-        <members>Student_Subject__c</members>
-        <members>Student__c</members>
-        <members>Subject__c</members>
-        <members>Teacher__c</members>
-        <members>Year_of_Class__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Employee__c</members>
-        <members>Pan_Card__c</members>
-        <members>Student_Subject__c</members>
-        <members>Student__c</members>
-        <members>Subject__c</members>
-        <members>Teacher__c</members>
-        <members>Year_of_Class__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>Branch__c-Branch Layout</members>
-        <members>College__c-College Layout</members>
-        <members>Employee__c-Employee Layout</members>
-        <members>Fees_Submitted__c-Deposit Layout</members>
-        <members>Pan_Card__c-Pan Card Layout</members>
-        <members>Student_Subject__c-StudentSubject Layout</members>
-        <members>Student__c-Registrar Layout</members>
-        <members>Student__c-Student Layout</members>
-        <members>Student__c-Teacher Layout</members>
-        <members>Subject__c-Subject Layout</members>
-        <members>Teacher__c-Teacher Layout</members>
         <name>Layout</name>
     </types>
     <types>
