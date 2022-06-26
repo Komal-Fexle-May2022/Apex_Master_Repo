@@ -10,14 +10,6 @@
     </types>
 	<types>
 		<members>HelloWorldClass</members>
-		<name>ApexClass</name>
-	</types>
-    <types>
-        <members>DataTypesController</members>
-		<members>HieraricalListMapController</members>
-		<members>CollectionsMethodController</members>
-        <name>ApexClass</name>
-    </types>    
 	<types>
 		<members>Hello_World_Object__c.HelloWorld__c</members>
 		<name>CustomField</name>
