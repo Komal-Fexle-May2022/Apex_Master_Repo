@@ -10,8 +10,6 @@
     </types>
 	<types>
 		<members>HelloWorldClass</members>
-		<name>ApexClass</name>
-	</types>
 	<types>
 		<members>Hello_World_Object__c.HelloWorld__c</members>
 		<name>CustomField</name>
@@ -105,5 +103,9 @@
         <members>Book__c</members>
         <name>CustomObject</name>
     </types>
+    <types>
+		<members>HelloWorldClass</members>
+        <name>ApexClass</name>
+	<types>
     <version>54.0</version>
 </Package>
