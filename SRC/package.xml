@@ -107,5 +107,13 @@
 		<members>HelloWorldClass</members>
         <name>ApexClass</name>
 	<types>
+    <types>
+		<members>ApexPropertiesExample</members>
+		<members>ConstructorController</members>
+		<members>LoopController</members>
+		<members>MethodCallingController</members>
+		<members>OverloadingController</members>
+		<name>ApexClass</name>
+	</types>
     <version>54.0</version>
 </Package>
