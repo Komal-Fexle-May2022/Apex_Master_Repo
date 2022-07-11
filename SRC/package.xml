@@ -115,5 +115,13 @@
 		<members>OverloadingController</members>
 		<name>ApexClass</name>
 	</types>
+    <types>
+		<members>CustomerPurchaseOrderController</members>
+		<members>EmployeePurchaseOrderController</members>
+		<members>KeywordsController</members>
+		<members>ProcessPurchaseOrder</members>
+		<members>PurchaseOrder</members>
+		<name>ApexClass</name>
+	</types>
     <version>54.0</version>
 </Package>
