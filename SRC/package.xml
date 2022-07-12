@@ -115,5 +115,9 @@
 		<members>OverloadingController</members>
 		<name>ApexClass</name>
 	</types>
+	<types>
+		<members>CountryMapController</members>
+		<name>ApexClass</name>
+	</types>
     <version>54.0</version>
 </Package>
