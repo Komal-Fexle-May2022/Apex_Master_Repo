@@ -119,5 +119,41 @@
 		<members>CountryMapController</members>
 		<name>ApexClass</name>
 	</types>
+    <types>
+        <members>CountryStateDistrictJSONController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Country__c.Country_Code__c</members>
+        <members>Country__c.Country_JSON_Data__c</members>
+        <members>Country__c.Total_Districts__c</members>
+        <members>Country__c.Total_States__c</members>
+        <members>Districts__c.District_Pin_Code__c</members>
+        <members>Districts__c.Identification__c</members>
+        <members>Districts__c.State_Name__c</members>
+        <members>States__c.Country__c</members>
+        <members>States__c.Identification__c</members>
+        <members>States__c.State_Code__c</members>
+        <members>States__c.Total_Districts__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Country__c</members>
+        <members>Districts__c</members>
+        <members>States__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Country__c</members>
+        <members>Districts__c</members>
+        <members>States__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Country__c-Country Layout</members>
+        <members>Districts__c-Districts Layout</members>
+        <members>States__c-States Layout</members>
+        <name>Layout</name>
+    </types>
     <version>54.0</version>
 </Package>
