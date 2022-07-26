@@ -74,6 +74,15 @@
         <members>Student__c.Total_Fees__c</members>
         <members>Student__c.Total_Percentage__c</members>
         <members>Student__c.Total_Students__c</members>
+        members>Bank_Account__c.Account_Number__c</members>
+        <members>Bank_Account__c.Bank_Account_Type__c</members>
+        <members>Bank_Account__c.Bank_Name__c</members>
+        <members>Bank_Account__c.Email_Address__c</members>
+        <members>Bank_Account__c.IFSC_code__c</members>
+        <members>Bank_Account__c.Mobile_Number__c</members>
+        <members>Bank_Account__c.Pan_Card_Number__c</members>
+        <members>Commision__c.Agent__c</members>
+        <members>Commision__c.Commission_Amount__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -92,7 +101,8 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
+         <members>BankAccountTrigger</members>
+        <members>TestingTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
@@ -113,6 +123,8 @@
 		<members>LoopController</members>
 		<members>MethodCallingController</members>
 		<members>OverloadingController</members>
+        <members>BankAccountTriggerHandler</members>
+        <members>TransactionController</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -141,12 +153,16 @@
         <members>Country__c</members>
         <members>Districts__c</members>
         <members>States__c</members>
+        <members>Bank_Account__c</members>
+        <members>Commision__c</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>Country__c</members>
         <members>Districts__c</members>
         <members>States__c</members>
+         <members>Bank_Account__c</members>
+        <members>Commision__c</members>
         <name>CustomTab</name>
     </types>
     <types>
