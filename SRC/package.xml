@@ -101,8 +101,10 @@
         <name>ApexClass</name>
     </types>
     <types>
-         <members>BankAccountTrigger</members>
+        <members>BankAccountTrigger</members>
         <members>TestingTrigger</members>
+        <members>AccountTrigger</members>
+        <members>ContactTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
@@ -118,6 +120,8 @@
         <name>ApexClass</name>
 	<types>
     <types>
+        <members>AccountTriggerHandler</members>
+        <members>ContactTriggerHandler</members>
 		<members>ApexPropertiesExample</members>
 		<members>ConstructorController</members>
 		<members>LoopController</members>
