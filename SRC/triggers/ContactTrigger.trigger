@@ -3,10 +3,18 @@
   * Created By      :      Komal Kumawat
   * Created On      :      27/07/2022
   * Version Logs    :      V_1.0
+  * Modification    :      To handle the status of the Parent object Account and Property.
+                           V_1.1   Created By Komal Kumawat on 16/08/2022.
 */
 
 trigger ContactTrigger on Contact (after insert, after update, after delete)
 {
+    if(Trigger.isBefore){
+        if(Trigger.isInsert){
+            ContactTriggerHelper.populateAccountStatus(Trigger.new);
+        }
+    }
+    
     if(trigger.isAfter)
     {
         if(trigger.isInsert)

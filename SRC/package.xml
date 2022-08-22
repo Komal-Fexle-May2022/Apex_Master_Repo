@@ -15,6 +15,7 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+        <members>Property__c</members>
 		<members>Hello_World_Object__c</members>
 		<name>CustomObject</name>
 	</types>
@@ -27,6 +28,10 @@
         <name>ApexClass</name>
     </types>
 	<types>
+        <members>Account.Property__c</members>
+        <members>Account.Status__c</members>
+        <members>Contact.Status__c</members>
+        <members>Property__c.Status__c</members>
         <members>Student__c.Account_Number__c</members>
         <members>Student__c.Address__c</members>
         <members>Student__c.Bank_Name__c</members>
@@ -101,6 +106,9 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>ContactTrigger</members>
+        <members>DistrictTrigger</members>
+        <members>StateTrigger</members>
         <members>BankAccountTrigger</members>
         <members>TestingTrigger</members>
         <members>AccountTrigger</members>
@@ -120,6 +128,9 @@
         <name>ApexClass</name>
 	<types>
     <types>
+        <members>ContactTriggerHelper</members>
+        <members>DistrictsTriggerHandler</members>
+        <members>StateTriggerHandler</members>
         <members>AccountTriggerHandler</members>
         <members>ContactTriggerHandler</members>
 		<members>ApexPropertiesExample</members>
