@@ -74,7 +74,7 @@
         <members>Student__c.Total_Fees__c</members>
         <members>Student__c.Total_Percentage__c</members>
         <members>Student__c.Total_Students__c</members>
-        members>Bank_Account__c.Account_Number__c</members>
+        <members>Bank_Account__c.Account_Number__c</members>
         <members>Bank_Account__c.Bank_Account_Type__c</members>
         <members>Bank_Account__c.Bank_Name__c</members>
         <members>Bank_Account__c.Email_Address__c</members>
@@ -101,6 +101,7 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>OpportunityTrigger</members>
         <members>BankAccountTrigger</members>
         <members>TestingTrigger</members>
         <members>AccountTrigger</members>
@@ -120,6 +121,7 @@
         <name>ApexClass</name>
 	<types>
     <types>
+        <members>OpportunityTriggerHandler</members>
         <members>AccountTriggerHandler</members>
         <members>ContactTriggerHandler</members>
 		<members>ApexPropertiesExample</members>
@@ -140,6 +142,18 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Automobile_Presence_Sensor__c.Account__c</members>
+        <members>Automobile_Presence_Sensor__c.Opportunity__c</members>
+        <members>Automobile_Sensor__c.Account__c</members>
+        <members>Automobile_Sensor__c.Opportunity__c</members>
+        <members>Automobile_TDU__c.Account__c</members>
+        <members>Automobile_TDU__c.Opportunity__c</members>
+        <members>Automobile_Tag__c.Account__c</members>
+        <members>Automobile_Tag__c.Opportunity__c</members>
+        <members>Opportunity.Automobile_Tag_Details_1__c</members>
+        <members>Opportunity.Automobile_Tag_Details_2__c</members>
+        <members>Opportunity.Automobile_Tag_Details_3__c</members>
+        <members>Opportunity.Return_To_HQ__c</members>
         <members>Country__c.Country_Code__c</members>
         <members>Country__c.Country_JSON_Data__c</members>
         <members>Country__c.Total_Districts__c</members>
@@ -154,6 +168,10 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Automobile_Presence_Sensor__c</members>
+        <members>Automobile_Sensor__c</members>
+        <members>Automobile_TDU__c</members>
+        <members>Automobile_Tag__c</members>
         <members>Country__c</members>
         <members>Districts__c</members>
         <members>States__c</members>
