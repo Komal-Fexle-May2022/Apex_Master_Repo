@@ -47,6 +47,7 @@ trigger AccountTrigger on Account (before insert, before update, before delete, 
         {
             if(trigger.isInsert)
             {
+                AccountTriggerHelper.processUpdateAccountData();
                 System.debug('I am after Insert');
                 /* This statement will give runtime error because trigger.new is not allowed in after Insert  
                  newTrigger.NumberOfEmployees = 3456; */
@@ -55,6 +56,7 @@ trigger AccountTrigger on Account (before insert, before update, before delete, 
             }
             else if(trigger.isUpdate)
             {
+                AccountTriggerHelper.processUpdateAccountData();
                 System.debug('I am after Update');
                 System.debug('Check After Update List ::: Trigger.New ' + Trigger.New);
                 System.debug('Check After Update List ::: Trigger.old ' + Trigger.old);
