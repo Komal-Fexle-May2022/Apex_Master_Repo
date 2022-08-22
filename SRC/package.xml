@@ -120,6 +120,7 @@
         <name>ApexClass</name>
 	<types>
     <types>
+        <members>AccountTriggerHelper</members>
         <members>AccountTriggerHandler</members>
         <members>ContactTriggerHandler</members>
 		<members>ApexPropertiesExample</members>
