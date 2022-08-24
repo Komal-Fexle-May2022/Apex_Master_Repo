@@ -19,6 +19,9 @@
         <members>CountryMapController</members>  
         <members>CountryStateDistrictJSONController</members>  
         <members>OpportunityTriggerHandler</members>  
+        <members>ContactTriggerHelper</members>
+        <members>DistrictsTriggerHandler</members>
+        <members>StateTriggerHandler</members>
 		<name>ApexClass</name>
 	</types>
 	 <types>
@@ -34,6 +37,7 @@
         <members>Automobile_Sensor__c</members>
         <members>Automobile_TDU__c</members>
         <members>Automobile_Tag__c</members>
+        <members>Property__c</members>
         <name>CustomObject</name>
     </types>
 	<types>
@@ -118,6 +122,10 @@
         <members>Opportunity.Automobile_Tag_Details_2__c</members>
         <members>Opportunity.Automobile_Tag_Details_3__c</members>
         <members>Opportunity.Return_To_HQ__c</members>
+        <members>Account.Property__c</members>
+        <members>Account.Status__c</members>
+        <members>Contact.Status__c</members>
+        <members>Property__c.Status__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -126,6 +134,9 @@
         <name>RecordType</name>
     </types>
     <types>
+        <members>ContactTrigger</members>
+        <members>DistrictTrigger</members>
+        <members>StateTrigger</members>
         <members>OpportunityTrigger</members>
         <members>BankAccountTrigger</members>
         <members>TestingTrigger</members>
