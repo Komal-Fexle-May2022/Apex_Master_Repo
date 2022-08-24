@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	 <types>
-	<members>HelloWorldTestClass</members>
+	    <members>HelloWorldTestClass</members>
         <members>MyHelloWorld</members>
         <members>DreamWorldClass</members>   
         <members>StarPatternController</members>    
-	<members>HelloWorldClass</members>    
+	    <members>HelloWorldClass</members>    
         <members>AccountTriggerHelper</members>
         <members>AccountTriggerHandler</members>
         <members>ContactTriggerHandler</members>
-	<members>ApexPropertiesExample</members>
-	<members>ConstructorController</members>
-	<members>LoopController</members>
-	<members>MethodCallingController</members>
-	<members>OverloadingController</members>
+        <members>ApexPropertiesExample</members>
+        <members>ConstructorController</members>
+        <members>LoopController</members>
+        <members>MethodCallingController</members>
+        <members>OverloadingController</members>
         <members>BankAccountTriggerHandler</members>
         <members>TransactionController</members>
-	<members>CountryMapController</members>  
-	<members>CountryStateDistrictJSONController</members>    
+        <members>CountryMapController</members>  
+        <members>CountryStateDistrictJSONController</members>    
 		<name>ApexClass</name>
 	</types>
 	 <types>
-	<members>DreamWorld_Object__c</members> 
-	<members>Hello_World_Object__c</members>    
-	<members>Book__c</members>    
+        <members>DreamWorld_Object__c</members> 
+        <members>Hello_World_Object__c</members>    
+        <members>Book__c</members>    
         <members>Country__c</members>
         <members>Districts__c</members>
         <members>States__c</members>
@@ -32,8 +32,8 @@
         <name>CustomObject</name>
     </types>
 	<types>
-	<members>Book__c.Price__c</members>	
-	<members>Country__c.Country_Code__c</members>
+        <members>Book__c.Price__c</members>	
+        <members>Country__c.Country_Code__c</members>
         <members>Country__c.Country_JSON_Data__c</members>
         <members>Country__c.Total_Districts__c</members>
         <members>Country__c.Total_States__c</members>
@@ -44,7 +44,7 @@
         <members>States__c.Identification__c</members>
         <members>States__c.State_Code__c</members>
         <members>States__c.Total_Districts__c</members>	
-	<members>Hello_World_Object__c.HelloWorld__c</members>	
+	    <members>Hello_World_Object__c.HelloWorld__c</members>	
         <members>Student__c.Account_Number__c</members>
         <members>Student__c.Address__c</members>
         <members>Student__c.Bank_Name__c</members>
@@ -92,7 +92,7 @@
         <members>Student__c.Total_Fees__c</members>
         <members>Student__c.Total_Percentage__c</members>
         <members>Student__c.Total_Students__c</members>
-        members>Bank_Account__c.Account_Number__c</members>
+        <members>Bank_Account__c.Account_Number__c</members>
         <members>Bank_Account__c.Bank_Account_Type__c</members>
         <members>Bank_Account__c.Bank_Name__c</members>
         <members>Bank_Account__c.Email_Address__c</members>
@@ -117,17 +117,17 @@
     </types>
    
     <types>
-	<members>DreamWorld_Object__c</members>  
-	<members>Hello_World_Object__c</members>    
+        <members>DreamWorld_Object__c</members>  
+        <members>Hello_World_Object__c</members>    
         <members>Country__c</members>
         <members>Districts__c</members>
         <members>States__c</members>
-         <members>Bank_Account__c</members>
+        <members>Bank_Account__c</members>
         <members>Commision__c</members>
         <name>CustomTab</name>
     </types>
     <types>
-	<members>Branch__c</members>    
+	    <members>Branch__c</members>    
         <members>Country__c-Country Layout</members>
         <members>Districts__c-Districts Layout</members>
         <members>States__c-States Layout</members>
