@@ -1,32 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-     <types>
-        <members>DreamWorld_Object__c</members>
+	 <types>
+	<members>HelloWorldTestClass</members>
+        <members>MyHelloWorld</members>
+        <members>DreamWorldClass</members>   
+        <members>StarPatternController</members>    
+	<members>HelloWorldClass</members>    
+        <members>AccountTriggerHelper</members>
+        <members>AccountTriggerHandler</members>
+        <members>ContactTriggerHandler</members>
+	<members>ApexPropertiesExample</members>
+	<members>ConstructorController</members>
+	<members>LoopController</members>
+	<members>MethodCallingController</members>
+	<members>OverloadingController</members>
+        <members>BankAccountTriggerHandler</members>
+        <members>TransactionController</members>
+	<members>CountryMapController</members>  
+	<members>CountryStateDistrictJSONController</members>    
+		<name>ApexClass</name>
+	</types>
+	 <types>
+	<members>DreamWorld_Object__c</members> 
+	<members>Hello_World_Object__c</members>    
+	<members>Book__c</members>    
+        <members>Country__c</members>
+        <members>Districts__c</members>
+        <members>States__c</members>
+        <members>Bank_Account__c</members>
+        <members>Commision__c</members>
         <name>CustomObject</name>
     </types>
-    <types>
-        <members>DreamWorld_Object__c</members>
-        <name>CustomTab</name>
-    </types>
 	<types>
-		<members>HelloWorldClass</members>
-	<types>
-		<members>Hello_World_Object__c.HelloWorld__c</members>
-		<name>CustomField</name>
-	</types>
-	<types>
-		<members>Hello_World_Object__c</members>
-		<name>CustomObject</name>
-	</types>
-	<types>
-		<members>Hello_World_Object__c</members>
-		<name>CustomTab</name>
-	</types>
-    <types>
-        <members>DreamWorldClass</members>
-        <name>ApexClass</name>
-    </types>
-	<types>
+	<members>Book__c.Price__c</members>	
+	<members>Country__c.Country_Code__c</members>
+        <members>Country__c.Country_JSON_Data__c</members>
+        <members>Country__c.Total_Districts__c</members>
+        <members>Country__c.Total_States__c</members>
+        <members>Districts__c.District_Pin_Code__c</members>
+        <members>Districts__c.Identification__c</members>
+        <members>Districts__c.State_Name__c</members>
+        <members>States__c.Country__c</members>
+        <members>States__c.Identification__c</members>
+        <members>States__c.State_Code__c</members>
+        <members>States__c.Total_Districts__c</members>	
+	<members>Hello_World_Object__c.HelloWorld__c</members>	
         <members>Student__c.Account_Number__c</members>
         <members>Student__c.Address__c</members>
         <members>Student__c.Bank_Name__c</members>
@@ -86,19 +104,9 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Branch__c</members>
-        <name>Layout</name>
-    </types>
-    <types>
         <members>Student__c.Registrar</members>
         <members>Student__c.Teacher</members>
         <name>RecordType</name>
-    </types>
-    <types>
-        <members>HelloWorldTestClass</members>
-        <members>MyHelloWorld</members>
-        <members>StarPatternController</members>
-        <name>ApexClass</name>
     </types>
     <types>
         <members>BankAccountTrigger</members>
@@ -107,62 +115,10 @@
         <members>ContactTrigger</members>
         <name>ApexTrigger</name>
     </types>
+   
     <types>
-        <members>Book__c.Price__c</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>Book__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-		<members>HelloWorldClass</members>
-        <name>ApexClass</name>
-	<types>
-    <types>
-        <members>AccountTriggerHelper</members>
-        <members>AccountTriggerHandler</members>
-        <members>ContactTriggerHandler</members>
-		<members>ApexPropertiesExample</members>
-		<members>ConstructorController</members>
-		<members>LoopController</members>
-		<members>MethodCallingController</members>
-		<members>OverloadingController</members>
-        <members>BankAccountTriggerHandler</members>
-        <members>TransactionController</members>
-		<name>ApexClass</name>
-	</types>
-	<types>
-		<members>CountryMapController</members>
-		<name>ApexClass</name>
-	</types>
-    <types>
-        <members>CountryStateDistrictJSONController</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>Country__c.Country_Code__c</members>
-        <members>Country__c.Country_JSON_Data__c</members>
-        <members>Country__c.Total_Districts__c</members>
-        <members>Country__c.Total_States__c</members>
-        <members>Districts__c.District_Pin_Code__c</members>
-        <members>Districts__c.Identification__c</members>
-        <members>Districts__c.State_Name__c</members>
-        <members>States__c.Country__c</members>
-        <members>States__c.Identification__c</members>
-        <members>States__c.State_Code__c</members>
-        <members>States__c.Total_Districts__c</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>Country__c</members>
-        <members>Districts__c</members>
-        <members>States__c</members>
-        <members>Bank_Account__c</members>
-        <members>Commision__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
+	<members>DreamWorld_Object__c</members>  
+	<members>Hello_World_Object__c</members>    
         <members>Country__c</members>
         <members>Districts__c</members>
         <members>States__c</members>
@@ -171,6 +127,7 @@
         <name>CustomTab</name>
     </types>
     <types>
+	<members>Branch__c</members>    
         <members>Country__c-Country Layout</members>
         <members>Districts__c-Districts Layout</members>
         <members>States__c-States Layout</members>
