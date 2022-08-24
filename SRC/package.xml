@@ -17,7 +17,8 @@
         <members>BankAccountTriggerHandler</members>
         <members>TransactionController</members>
         <members>CountryMapController</members>  
-        <members>CountryStateDistrictJSONController</members>    
+        <members>CountryStateDistrictJSONController</members>  
+        <members>OpportunityTriggerHandler</members>  
 		<name>ApexClass</name>
 	</types>
 	 <types>
@@ -29,6 +30,10 @@
         <members>States__c</members>
         <members>Bank_Account__c</members>
         <members>Commision__c</members>
+        <members>Automobile_Presence_Sensor__c</members>
+        <members>Automobile_Sensor__c</members>
+        <members>Automobile_TDU__c</members>
+        <members>Automobile_Tag__c</members>
         <name>CustomObject</name>
     </types>
 	<types>
@@ -101,6 +106,18 @@
         <members>Bank_Account__c.Pan_Card_Number__c</members>
         <members>Commision__c.Agent__c</members>
         <members>Commision__c.Commission_Amount__c</members>
+        <members>Automobile_Presence_Sensor__c.Account__c</members>
+        <members>Automobile_Presence_Sensor__c.Opportunity__c</members>
+        <members>Automobile_Sensor__c.Account__c</members>
+        <members>Automobile_Sensor__c.Opportunity__c</members>
+        <members>Automobile_TDU__c.Account__c</members>
+        <members>Automobile_TDU__c.Opportunity__c</members>
+        <members>Automobile_Tag__c.Account__c</members>
+        <members>Automobile_Tag__c.Opportunity__c</members>
+        <members>Opportunity.Automobile_Tag_Details_1__c</members>
+        <members>Opportunity.Automobile_Tag_Details_2__c</members>
+        <members>Opportunity.Automobile_Tag_Details_3__c</members>
+        <members>Opportunity.Return_To_HQ__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -109,6 +126,7 @@
         <name>RecordType</name>
     </types>
     <types>
+        <members>OpportunityTrigger</members>
         <members>BankAccountTrigger</members>
         <members>TestingTrigger</members>
         <members>AccountTrigger</members>
