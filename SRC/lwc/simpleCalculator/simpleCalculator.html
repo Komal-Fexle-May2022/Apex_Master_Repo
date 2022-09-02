@@ -1,0 +1,25 @@
+<!-- 
+Purpose         :    Created this Html file to create Simple Calculator by taking input and show result by clicking buttons.
+Created By      :    Komal Kumawat
+Created Date    :    01/09/2022
+Current Version :    V1.0
+Revision Log    :    V_1.0  Created - Komal Kumawat - 01/09/2022    
+-->
+<template>
+    <!-- For Title and Icon  -->
+    <lightning-card title="Simple Calculator LWC " icon-name="standard:number_input">
+        <div class="slds-m-around_small">
+            <!-- For taking Input of two numbers.-->
+            <lightning-input required="true" label="First Number" name="num1" onchange= "{handleChangeNum1}"></lightning-input>
+            <lightning-input required="true" label="Second Number" name="num2" onchange= "{handleChangeNum2}"></lightning-input><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- For Creating Buttons-->
+            <lightning-button label="Add" style="margin-right: 70px" variant="brand" onclick= "{addOper}"></lightning-button>
+            <lightning-button label="Subtract" style="margin-right: 70px" variant="brand" onclick= "{subOper}"></lightning-button>
+            <lightning-button label="Multiply" style="margin-right: 70px"  variant="brand" onclick= "{multOper}"></lightning-button>
+            <lightning-button label="Divide"  variant="brand" onclick= "{divOper}"></lightning-button>
+            <!-- Showing result of Addition , Subtraction, Multiplicaion, Division-->
+            <lightning-input label="Result = " name="result" read-only="true" value= "{result}"></lightning-input>
+        </div>    
+    </lightning-card>
+</template>
