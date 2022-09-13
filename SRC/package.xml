@@ -162,5 +162,9 @@
         <members>States__c-States Layout</members>
         <name>Layout</name>
     </types>
+    <types>
+        <members>simpleCalculator</members>
+        <name>LightningComponentBundle</name>
+    </types>
     <version>54.0</version>
 </Package>
