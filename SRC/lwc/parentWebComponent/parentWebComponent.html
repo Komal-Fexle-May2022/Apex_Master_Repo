@@ -1,0 +1,18 @@
+<!-- 
+Purpose         :    Created this Html file to create button and call child component.
+Created By      :    Komal Kumawat
+Created Date    :    06/09/2022
+Current Version :    V1.0
+Revision Log    :    V_1.0  Created - Komal Kumawat - 06/09/2022    
+-->
+<template>
+    <lightning-card title="Parent To Child Communication" icon-name="standard:number_input">
+        <div class="slds-m-around_small">
+            <lightning-button variant="brand" label="Increase No" onclick={handleClick}></lightning-button>
+            <!--calling child web component here-->
+            <br>
+            <c-child-web-component></c-child-web-component> 
+        </div>    
+    </lightning-card> 
+   
+  </template>
