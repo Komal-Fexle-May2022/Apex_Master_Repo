@@ -170,6 +170,7 @@
 		<members>childWebComponent</members>
 		<members>parentLwc</members>
 		<members>parentWebComponent</members>
+        <members>thirdPartyJsComponent</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>54.0</version>
