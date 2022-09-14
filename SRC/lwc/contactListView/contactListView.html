@@ -1,0 +1,27 @@
+<!-- 
+Purpose         :    Created this Html file is to create tile of contact list using flexipageRegionWidth, layout, rendering method.
+Created By      :    Komal Kumawat
+Created Date    :    12/09/2022
+Current Version :    V1.0
+Revision Log    :    V_1.0  Created - Komal Kumawat - 12/09/2022    
+-->
+<template>
+    <lightning-card title="Contact List" icon-name="custom:custom63">
+        {flexipageRegionWidth}
+        <div class="slds-var-m-around_medium">
+            <div class={flexipageRegionWidth}>
+                <lightning-layout multiple-rows>
+                    <template if:true={contacts.data}>
+                        <template for:each={contacts.data} for:item="contact">
+                            <lightning-layout-item size="12" large-device-size={large} medium-device-size={medium} small-device-size={small} key={contact.Id}>
+                                <lightning-tile label="contact" class="slds-box slds-m-horizontal_xxx-small">
+                                    <p>First Name:{contact.FirstName}<br>Last Name:{contact.LastName}<br>Email:{contact.Email}</p>
+                                 </lightning-tile>
+                            </lightning-layout-item>    
+                        </template>
+                    </template>
+                </lightning-layout>
+            </div>    
+        </div>
+    </lightning-card>
+</template>
