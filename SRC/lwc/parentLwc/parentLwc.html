@@ -1,0 +1,20 @@
+<!-- 
+Purpose         :    Created this Html file to create progress bar and call child input field.
+Created By      :    Komal Kumawat
+Created Date    :    06/09/2022
+Current Version :    V1.0
+Revision Log    :    V_1.0  Created - Komal Kumawat - 06/09/2022    
+-->
+<template>
+    <lightning-card title="Getting Data From Child" icon-name="standard:number_input">
+      <div class="slds-m-around_small">
+        <lightning-progress-bar
+          value={progressValue}
+          size="large"
+        ></lightning-progress-bar>
+        <c-child-lwc
+          onprogressvaluechange={hanldeProgressValueChange}
+        ></c-child-lwc>
+      </div>
+    </lightning-card>
+  </template>
