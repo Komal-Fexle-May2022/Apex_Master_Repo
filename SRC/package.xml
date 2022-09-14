@@ -166,6 +166,10 @@
     <types>
         <members>simpleCalculator</members>
         <members>loadClassMethod</members>
+        <members>childLwc</members>
+		<members>childWebComponent</members>
+		<members>parentLwc</members>
+		<members>parentWebComponent</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>54.0</version>
