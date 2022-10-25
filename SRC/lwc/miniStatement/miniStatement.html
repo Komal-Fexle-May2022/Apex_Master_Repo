@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-var-m-around_medium">
+        <lightning-quick-action-panel title="Check The Detail">
+            <h1 class="slds-modal_title">Mini Statement</h1>
+            <lightning-combobox name="progress"
+                    label="Transaction Status Check"
+                    value={transactionLimit}
+                    placeholder="Check Option"
+                    options={options}
+                    onchange={handlevalue}>
+            </lightning-combobox>
+            <div style="height: 400px;">
+                <template if:true={dataList}>
+                    <lightning-datatable key-field="id" data={dataList} columns={columns}></lightning-datatable>
+                </template>
+            </div>
+            <div slot="footer">
+                <lightning-button varient="neutral" label="Cancel" onclick={actionClose}></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+    </div>
+</template>
