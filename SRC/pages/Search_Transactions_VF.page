@@ -1,0 +1,130 @@
+<apex:page Controller="Search_Transaction_Controller" showHeader="false" sidebar="false" cache="false" docType="html-5.0" >
+    <head>
+        <title>Search Transactions </title>
+    </head>
+    <div class="stepsContainer">
+        <div class="all-step activeStep">
+            <apex:form >
+                <apex:pageBlock id="mainBlockId">
+                    <div style="clear: both;"></div>
+                        <div >
+                            <h3 class="step-title">Search Transactions</h3>
+                        </div>
+                    <div class="clr"></div>
+                     <apex:outputpanel id="toplevelFilter">
+                        <div class="filter-flex">
+                            <div class="filter-child">
+                                <apex:outputLabel value="Amount Between  " />
+                                <apex:inputText value="{!selectedamountStart}" onchange="transactionJS()" />
+                                <apex:inputText value="{!selectedamountEnd}" onchange="transactionJS()" />
+                            </div>
+                            <div class="col-md-2 mt-1">
+                                <apex:outputLabel value="Date From   " />
+                                <apex:input type="date" value="{!selecteddateFrom}" onchange="transactionJS()"  >
+                                </apex:input>
+                            </div>
+                            <div class="col-md-2 mt-1">
+                                <apex:outputLabel value="Date To  " />
+                                <apex:input type="date" value="{!selecteddateTo}" onchange="transactionJS()"  >
+                                </apex:input>
+                            </div>
+                            <div class="filter-child">
+                                <apex:outputLabel value="Entry Name  " />
+                                <apex:inputText value="{!selectedEntryName}" title="TX-_____" onchange="transactionJS()" />
+                            </div>
+                            <div class="filter-child">
+                                <apex:outputLabel value="Status  " />
+                                <apex:selectList styleClass="selectlist-width" onchange="transactionJS()" value="{!selectedstatus}" multiselect="false" size="1">
+                                    <apex:selectOptions value="{!Status}" />
+                                </apex:selectList>
+                            </div>
+                            <div class="filter-child">
+                                <apex:outputLabel value="Account Number  " />
+                                <apex:inputText value="{!selectedAccountNumber}" title="AccNo-____" onchange="transactionJS()"  />
+                            </div>
+                            
+                            <div class="filter-child filter-auto">
+                                <label>&nbsp;</label>
+                                <apex:commandButton styleclass="btn-reset" value="Reset search filter" action="{!resetFilter}" rerender="searchResult,toplevelFilter"  />
+                            </div>
+                        </div>
+                    </apex:outputpanel> 
+                    <apex:outputpanel id="PrimaryBlock">
+                        <div class="row-c">
+                            <div class="MainClass center-c" id="one" style="width:100%">
+                            <div class="clr"></div>
+                                <apex:pageBlock id="searchResult">
+                                            <div class="r-table table-container">
+                                                <div class="form-wrapper-main1">
+                                                    <div class="form-div-main1"></div>
+                                                </div>
+                                                <div class="form-wrapper-inner1">
+                                                    <apex:pageBlockTable id="maintable" value="{!transactionWrapperList}" var="c" styleClass="form-div-inner1 history-class table cus-table">
+                                                        <apex:column HeaderValue="Name">
+                                                            <apex:outputText value="{!c.Name} "  /> 
+                                                        </apex:column>
+                                                        <apex:column HeaderValue="Amount">
+                                                            <apex:outputText value="{!c.Amount} "  /> 
+                                                        </apex:column>
+                                                        <apex:column HeaderValue="Transaction Date" >
+                                                            <apex:outputtext value="{0,date,MM/dd/yyyy}" >
+                                                                <apex:param value="{!c.transactionDate}" />
+                                                            </apex:outputtext>
+                                                        </apex:column>
+                                                        <apex:column HeaderValue="Contact Name" >
+                                                            <apex:outputText value="{!c.Contact_Name}" />
+                                                        </apex:column>
+                                                        <apex:column HeaderValue="Status" >
+                                                            <apex:outputText value="{!c.status}" />
+                                                        </apex:column>
+                                                        <apex:column HeaderValue="Type " >
+                                                            <apex:outputText value="{!c.Type}" />
+                                                        </apex:column>
+                                                        <apex:column HeaderValue="Account Number " >
+                                                            <apex:outputText value="{!c.AccountNumber}" />
+                                                        </apex:column>
+                                                    </apex:pageBlockTable>
+                                                </div>
+                                            </div>
+                                            <apex:outputPanel id="buttonsPanel" layout="block" styleClass="flex-sorting">
+                                                <div>
+                                                    <apex:outputText value="Number of Records per Page: " />&nbsp;
+                                                    <apex:selectList styleClass="recLimitSelect" value="{!recLimit}" multiselect="false" size="1">
+                                                        <apex:actionSupport action="{!first}" status="Casestatus" rerender="maintable,searchResult,footerPanel"
+                                                            event="onchange" />
+                                                        <apex:selectOption itemValue="10" itemLabel="10" />
+                                                        <apex:selectOption itemValue="25" itemLabel="25" />
+                                                        <apex:selectOption itemValue="50" itemLabel="50" />
+                                                        <apex:selectOption itemValue="75" itemLabel="75" />
+                                                    </apex:selectList>
+                                                </div>
+                                                <div>
+                                                    {!If((pageNumber * value(recLimit)) + 1 - value(recLimit) > totalCount,totalCount,(pageNumber * value(recLimit)) + 1 - value(recLimit))}
+                                                    - {!IF((pageNumber * value(recLimit)) > totalCount, totalCount,(pageNumber * value(recLimit)))} of {!totalCount}
+                                                </div>
+                                                <div>
+                                                    <apex:commandButton styleclass="btn btn-cus" disabled="{!OR(direction == 'first', firstRecordId == firstId, totalCount < 10)}"
+                                                    value="First" status="Casestatus" rerender="maintable,searchResult,footerPanel" action="{!first}"/>&nbsp;
+                                                    <apex:commandButton styleclass="btn btn-cus" disabled="{!OR(direction == 'first', firstRecordId == firstId, totalCount < 10)}"
+                                                    value="Previous" status="Casestatus" rerender="maintable,searchResult,footerPanel" action="{!previous}"/>&nbsp;
+                                                    <apex:commandButton styleclass="btn btn-cus" disabled="{!OR(direction == 'last', lastRecordId == lastId, totalCount < 10)}"
+                                                    value="Next " status="Casestatus" rerender="maintable,searchResult,footerPanel" action="{!next}"/>&nbsp;
+                                                    <apex:commandButton styleclass="btn btn-cus" disabled="{!OR(direction == 'last', lastRecordId == lastId, totalCount < 10)}"
+                                                    value="Last" status="Casestatus" rerender="maintable,searchResult,footerPanel" action="{!last}"/>
+                                                </div>
+                                        </apex:outputPanel>
+                                </apex:pageBlock>
+                            </div>
+                        </div>
+                    </apex:outputpanel>
+                    <apex:actionfunction name="transactionAF" action="{!first}" reRender="PrimaryBlock,toplevelFilter,jsFunctions"  />
+                </apex:pageBlock>
+            </apex:form>
+        </div>
+    </div>
+    <script>
+        function transactionJS() {
+            transactionAF();
+        }
+    </script>
+</apex:page>
